@@ -1,85 +1,162 @@
 <!DOCTYPE html>
 <html lang="uz">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mening Portfoliyom</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MadinaBonu | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="container">
-    <nav>
-      <h1 class="logo">💻 KMadinabonu<span> Dev</span></h1>
-      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
-      <ul>
-        <li><a href="#about">🙋‍♂️ Haqimda</a></li>
-        <li><a href="#skills">🧠 Ko‘nikmalar</a></li>
-        <li><a href="#projects">💼 Loyihalar</a></li>
-        <li><a href="#contact">📞 Aloqa</a></li>
-      </ul>
-    </nav>
 
-    <div class="hero">
-      <div class="text">
-        <h2>Salom 👋, men <span>Madinabonu</span></h2>
-        <p>Frontend dasturchiman. Men zamonaviy veb-saytlar va mobil interfeyslar yarataman.</p>
-        <a href="#contact" class="btn">🚀 Bog‘lanish</a>
-      </div>
-      <img src="me.jpg" alt="madinabonu112" class="avatar" />
+    <!-- 🌟 Стартовая анимация загрузки (Preloader) с волейбольным мячом -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="loader-header">
+                <span class="loader-icon">&lt;/&gt;</span>
+                <span class="ball-icon">🏐</span>
+            </div>
+            <h2>MadinaBonu</h2>
+            <div class="loader-bar"></div>
+        </div>
     </div>
-  </header>
 
-  <section id="about" class="container">
-    <h2>🙋‍♂️ Men haqimda</h2>
-    <p>
-      Men <strong>Frontend dasturchi</strong> sifatida veb-texnologiyalarni o‘rganishni va amalda qo‘llashni yoqtiraman. 
-      Mening asosiy yo‘nalishim — <b>HTML</b>, <b>CSS</b>, va <b>JavaScript</b> orqali foydalanuvchilarga chiroyli, 
-      tez va qulay interfeyslar yaratishdir. 
-    </p>
-    <p>
-      Dizayn yaratishda <b>Figma</b>’dan foydalanaman, kodlarni <b>Git va GitHub</b> orqali boshqaraman. 
-      Har kuni yangi narsalarni o‘rganishga, o‘zimni rivojlantirishga harakat qilaman. 
-      Mening maqsadim — foydalanuvchilarga qulay va estetik jihatdan yoqimli tajriba yaratish. ✨
-    </p>
-  </section>
+    <!-- Шапка сайта (Navigatsiya) -->
+    <header>
+        <div class="logo">MB.dev</div>
+        <nav>
+            <a href="#hero">Bosh sahifa</a>
+            <a href="#about">Men haqimda</a>
+            <a href="#skills">Ko'nikmalar</a>
+            <a href="#projects">Loyihalar</a>
+            <a href="#education">Ta'lim</a>
+            <a href="#contact">Aloqa</a>
+        </nav>
+    </header>
 
-  <section id="skills" class="container">
-    <h2>🧠 Ko‘nikmalarim</h2>
-    <div class="skills-grid">
-      <div class="skill">💻 HTML</div>
-      <div class="skill">🎨 CSS</div>
-      <div class="skill">⚡ JavaScript</div>
-      <div class="skill">🖌️ Figma</div>
-      <div class="skill">🔧 Git / GitHub</div>
-      <div class="skill">🌐 Responsive dizayn</div>
-    </div>
-  </section>
+    <main>
+        <!-- 1. Hero bo'limi -->
+        <section id="hero">
+            <div class="hero-content">
+                <h1 class="fade-in">Frontend Developer</h1>
+                <p class="fade-in delay-1">Madinabonu Atajanova</p>
+                <span class="shior fade-in delay-2">"Kod yozishda aniqlik, sportda esa jamoaviy g'alaba!"</span>
+                <a href="#contact" class="btn fade-in delay-3">Men bilan bog'lanish ↓</a>
+            </div>
+        </section>
 
-  <section id="projects" class="container">
-    <h2>💼 Loyihalarim</h2>
-    <div class="projects-grid">
-      <div class="project-card">
-        <h3>🌐 Portfolio sayti</h3>
-        <p>Shaxsiy portfolio — HTML, CSS, JS yordamida yaratilgan.</p>
-      </div>
-      <div class="project-card">
-        <h3>🎮 2D o‘yin</h3>
-        <p>ct.js yordamida tayyorlangan kichik o‘yin loyihasi.</p>
-      </div>
-      <div class="project-card">
-        <h3>📱 Mobil dizayn</h3>
-        <p>Figma’da yaratilgan zamonaviy UI dizayn namunasi.</p>
-      </div>
-    </div>
-  </section>
+        <!-- 2. Men haqimda bo'limi -->
+        <section id="about">
+            <div class="container">
+                <div class="about-img">
+                    <!-- Suyu foto photo.jpg -->
+                    <img src="photo.jpg" alt="MadinaBonu" onerror="this.src='https://placeholder.com'">
+                </div>
+                <div class="about-text">
+                    <h2>Men haqimda ma'lumot</h2>
+                    <p>Mening ismim Madinabonu Atajanova. Men 14 yoshdaman va hozirda A.S. Pushkin nomidagi 3-sonli maktabning yuqori sinfida a'lo baholarga o'qiyman. Dasturlash va zamonaviy veb-texnologiyalar olami mening eng katta qiziqishlarimdan biridir.</p>
+                    
+                    <p><strong>Sport va Xobbi:</strong> Voleybol — mening eng asosiy xobbiyim. Maydonchada men ko‘pincha libero pozitsiyasida o‘ynayman. Asosiy vazifam — orqa chiziqni ishonchli himoya qilish va to‘pni aniq qabul qilib berishdir. Shu bilan birga, men universal o‘yinchiman, shuning uchun ba’zan hujumchi sifatida ham o‘yinga qo‘shilaman. Hozirgi vaqtda bor e’tiborimni o‘z seksiyamdagi mashg‘ulotlarga va o‘rtoqlik uchrashuvlariga qaratganman, shu sababli maktab turnirlarida qatnashmaganman. Lekin bu tajriba menga jamoaviy ruh va chidamlilikni rivojlantirishda juda yordam beryapti. Bundan tashqari, 7 oydan buyon ingliz tilini faol o'rganib kelyapman va bo'sh vaqtlarimda qo'shiq kuylashni juda yaxshi ko'raman.</p>
+                    
+                    <p><strong>Kelajakdagi rejalarim:</strong> Mening eng katta maqsadlarimdan biri — kelajakda nufuzli Yuridik universitetga o'qishga kirishdir. Huquqshunoslik va qonunlar olamiga bolaligimdan juda qattiq qiziqaman. Kelajakda raqamli texnologiyalar rivojlangan davrda IT-huquqshunos (kiberhuquq mutaxassisi) bo'lib yetishishni va adolatni himoya qilishni xohlayman.</p>
+                </div>
+            </div>
+        </section>
 
-  <footer id="contact">
-    <h2>📞 Aloqa</h2>
-    <p>Telegram: <a href="https://t.me/Msmovaz">@Msmovaz</a></p>
-    <p>GitHub: <a href="https://github.com/madinabonu112">github.com/madinabonu112</a></p>
-    <p class="copy">© 2025 💻 Madinabonu Dev</p>
-  </footer>
-    <script src="index.js"></script>
+        <!-- 3. Ko'nikmalar bo'limi -->
+        <section id="skills">
+            <h2>Mening texnik ko'nikmalarim</h2>
+            <div class="skills-grid">
+                <div class="skill-card">HTML5 (Veb-sahifa strukturasi)</div>
+                <div class="skill-card">CSS3 (Veb-sahifa dizayni va stillari)</div>
+                <div class="skill-card">JavaScript (Interaktivlik va animatsiyalar)</div>
+                <div class="skill-card">Responsive Design (Telefonlar uchun moslashuvchanlik)</div>
+            </div>
+        </section>
+
+        <!-- 4. Loyihalar bo'limi -->
+        <section id="projects">
+            <h2>Mening amaliy loyihalarim</h2>
+            <div class="projects-grid">
+                
+                <!-- Loyiha 1 -->
+                <div class="project-card">
+                    <div class="project-badge">HTML / CSS</div>
+                    <h3>O'quv Landing Page</h3>
+                    <p><strong>Muammo:</strong> Internetda kompaniyalar haqida chiroyli va tushunarli vizitka saytlarining kamligi. <br><strong>Yechim:</strong> Toza HTML teglari va zamonaviy CSS yordamida har qanday qurilmaga moslashuvchi veb-sahifa yaratish. <br><strong>Natija:</strong> Chiroyli ko'rinishga ega bo'lgan toza kodli maket.</p>
+                    <div class="project-links">
+                        <button class="view-code-btn" data-project="landing">Kodlarni ko'rish 📋</button>
+                    </div>
+                </div>
+
+                <!-- Loyiha 2 -->
+                <div class="project-card">
+                    <div class="project-badge">HTML / CSS / JS</div>
+                    <h3>Shaxsiy Portfolio Veb-sayti</h3>
+                    <p><strong>Muammo:</strong> O'z amaliy ko'nikmalarim, kelajakdagi maqsadlarim va sport yutuqlarimni isbot bilan ko'rsatish imkoniyati yo'qligi. <br><strong>Yechim:</strong> O'zim haqimda to'liq ma'lumot beruvchi, animatsiyali va mobil telefonlar uchun moslashgan shaxsiy portfolio yaratish. <br><strong>Natija:</strong> HTML, CSS va JavaScript yordamida yozilgan jonli sayt.</p>
+                    <div class="project-links">
+                        <button class="view-code-btn" data-project="portfolio">Kodlarni ko'rish 📋</button>
+                    </div>
+                </div>
+
+                <!-- Loyiha 3 -->
+                <div class="project-card">
+                    <div class="project-badge">JavaScript</div>
+                    <h3>Interaktiv JS Dastur</h3>
+                    <p><strong>Muammo:</strong> Oddiy veb-sahifalarining statikligi va foydalanuvchilar bilan jonli muloqot qila olmasligi. <br><strong>Yechim:</strong> JavaScript algoritmlari yordamida dinamik hisoblagich, yuklanish taymeri yoki mini-o'yinlar tuzish. <br><strong>Natija:</strong> Hozirda JavaScript yordamida rivojlanish bosqichida.</p>
+                    <div class="project-links">
+                        <button class="view-code-btn" data-project="js-project">Kodlarni ko'rish 📋</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 📋 Окно для отображения кода -->
+            <div id="code-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <h3>Loyihaning namunaviy kodi:</h3>
+                    <pre><code id="code-display"></code></pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Ta'lim va yutuqlar bo'limi -->
+        <section id="education">
+            <h2>Ta'lim va shaxsiy yutuqlar</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4>A.S. Pushkin nomidagi 3-sonli maktab</h4>
+                    <p>Umumiy o'rta ta'lim bosqichi, faol jamoatchi o'quvchi (Hozirgi vaqtda)</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>Frontend Web Development kursi</h4>
+                    <p>HTML, CSS va JavaScript asoslarini o'rganish hamda zamonaviy veb-saytlar yaratish</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>Sport va shaxsiy rivojlanish</h4>
+                    <p>Voleybol bo'yicha maxsus seksiya mashg'ulotlari, intensiv ingliz tili kurslari va vokal darslari</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Aloqa bo'limi -->
+        <section id="contact">
+            <h2>Aloqa va ma'lumotlar</h2>
+            <p>Agar sizda loyihalar, stajirovka yoki hamkorlik bo'yicha takliflar bo'lsa, men bilan quyidagi aloqa kanallari orqali bog'lanishingiz mumkin:</p>
+            <div class="contact-links">
+                <a href="tel:+99890086699" class="contact-item">📞 +998 (90) 086-69-99</a>
+                <a href="https://t.me" target="_blank" class="contact-item">✈️ Telegram (@msmovas)</a>
+                <a href="mailto:madina@example.com" class="contact-item">📧 madina@example.com</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Madinabonu Atajanova. Barcha huquqlar himoyalangan. Sayt Vercel platformasida joylashtirildi.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
